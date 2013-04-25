@@ -28,7 +28,8 @@ public class ControlFrmTabulator {
         String[] textSplited = initText.split("\n");
         String tabString = getTabString(tabSize);
         for(int i = 0 ; i < textSplited.length ; i++) {
-            gui.txtEndValue.append( tabString + textSplited[i] + "\n");
+            gui.txtEndValue.append( tabString + textSplited[i]);
+            if (i != (textSplited.length - 1)) gui.txtEndValue.append("\n");
         }
     }
 
@@ -54,7 +55,8 @@ public class ControlFrmTabulator {
                     
                     if (tabSize > blankSpaces) beginIndex = blankSpaces; //Si se intenta quitar mas espacios en blancos de los que hay
                         
-                    gui.txtEndValue.append( textSplited[i].substring(beginIndex, textSplited[i].length()) + "\n");
+                    gui.txtEndValue.append( textSplited[i].substring(beginIndex, textSplited[i].length()) );
+                    if (i != (textSplited.length - 1)) gui.txtEndValue.append("\n");
                 } else {
                     gui.txtEndValue.append("\n");
                 }
