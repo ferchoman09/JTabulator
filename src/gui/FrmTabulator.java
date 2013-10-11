@@ -70,7 +70,7 @@ public class FrmTabulator extends javax.swing.JFrame {
         jLabel1.setText("Espacios Izquierda");
 
         spTabSize.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
-        spTabSize.setModel(new javax.swing.SpinnerNumberModel(4, 0, 10, 1));
+        spTabSize.setModel(new javax.swing.SpinnerNumberModel(4, 0, 999, 1));
 
         txtEndValue.setColumns(90);
         txtEndValue.setFont(new java.awt.Font("Monospaced", 0, 15)); // NOI18N
